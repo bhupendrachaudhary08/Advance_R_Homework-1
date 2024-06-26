@@ -5,7 +5,7 @@ format:
   html:
     embed-resources: true
   pdf: default
-date: June 17, 2024
+date: June 26, 2024
 date-format: long
 execute: 
   eval: true
@@ -24,6 +24,7 @@ I made a scatter plot using the `ggplot2` package in R to explore how Sepal Leng
 # Load necessary library
 library(ggplot2)
 
+# Plot between Sepal Lenght and Sepal width by Species
 ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
   geom_point(alpha = 0.7, size = 4) +
   labs(title = "Relationship Between Sepal Length & Sepal Width by Species",
